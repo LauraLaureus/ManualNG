@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		274608511CE28F7000B3A50C /* TokenChooser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF1621C99C9C200C524A9 /* TokenChooser.cpp */; };
 		278AF1611C99C5BC00C524A9 /* Scanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF15F1C99C5BC00C524A9 /* Scanner.cpp */; };
-		278AF1641C99C9C200C524A9 /* TokenChooser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF1621C99C9C200C524A9 /* TokenChooser.cpp */; };
 		278AF1671C99CBAE00C524A9 /* Writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF1651C99CBAE00C524A9 /* Writer.cpp */; };
 		27FCDB1F1C96F61C00AF492E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27FCDB1E1C96F61C00AF492E /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		274608501CE2866700B3A50C /* tokenDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenDef.h; sourceTree = SOURCE_ROOT; };
 		278AF15E1C99C54000C524A9 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
 		278AF15F1C99C5BC00C524A9 /* Scanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scanner.cpp; path = ../Scanner.cpp; sourceTree = "<group>"; };
 		278AF1601C99C5BC00C524A9 /* Scanner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Scanner.hpp; path = ../Scanner.hpp; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		278AF1631C99C9C200C524A9 /* TokenChooser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TokenChooser.hpp; sourceTree = "<group>"; };
 		278AF1651C99CBAE00C524A9 /* Writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Writer.cpp; sourceTree = "<group>"; };
 		278AF1661C99CBAE00C524A9 /* Writer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Writer.hpp; sourceTree = "<group>"; };
-		27DFE3B71CB02E4500E1221C /* tokenDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tokenDef.h; path = ../../../AnalizadorLexico/tokenDef.h; sourceTree = "<group>"; };
 		27DFE3B81CB0359700E1221C /* keywords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keywords.h; sourceTree = "<group>"; };
 		27FCDB1B1C96F61C00AF492E /* LexicalAnalizerForÑ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LexicalAnalizerForÑ"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FCDB1E1C96F61C00AF492E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -69,8 +69,8 @@
 		27FCDB1D1C96F61C00AF492E /* LexicalAnalizerForÑ */ = {
 			isa = PBXGroup;
 			children = (
+				274608501CE2866700B3A50C /* tokenDef.h */,
 				27DFE3B81CB0359700E1221C /* keywords.h */,
-				27DFE3B71CB02E4500E1221C /* tokenDef.h */,
 				278AF15F1C99C5BC00C524A9 /* Scanner.cpp */,
 				278AF1601C99C5BC00C524A9 /* Scanner.hpp */,
 				27FCDB1E1C96F61C00AF492E /* main.cpp */,
@@ -139,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274608511CE28F7000B3A50C /* TokenChooser.cpp in Sources */,
 				278AF1671C99CBAE00C524A9 /* Writer.cpp in Sources */,
-				278AF1641C99C9C200C524A9 /* TokenChooser.cpp in Sources */,
 				278AF1611C99C5BC00C524A9 /* Scanner.cpp in Sources */,
 				27FCDB1F1C96F61C00AF492E /* main.cpp in Sources */,
 			);

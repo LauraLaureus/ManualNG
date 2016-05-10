@@ -8,6 +8,8 @@
 
 #include "TokenChooser.hpp"
 
+std::string concatenacionPalabrasClave = "sifincasofuncnuloparasinofinaliniciosalidaespaciodevuelvemientrasREALVECTORLETRAleeescribeglobal";
+
 
 TokenChooser::TokenChooser(){
     this->w = new Writer();
@@ -35,10 +37,10 @@ void TokenChooser::decide(){
         return;
     }
     
-    if(isCurrentPartOfRegularExpression()){
+    /*if(isCurrentPartOfRegularExpression()){
         this->regularExpressionInProcess = true;
         //TODO return check key
-    }
+    }*/
 }
 
 bool TokenChooser::isCurrentWhiteSpace(){
@@ -50,7 +52,7 @@ bool TokenChooser::isCurrentPartOfKeyword(){
     if(this->queue.size() == 1) return checkFirstOrderKeyWords();
     else{
         std::string str_queue(this->queue.begin(), this->queue.end());
-        return STRWORDSCONCAT.find(str_queue) != std::string::npos;
+        return concatenacionPalabrasClave.find(str_queue) != std::string::npos;
     }
 }
 
@@ -119,7 +121,7 @@ bool TokenChooser::checkFirstOrderKeyWords(){
 
 int TokenChooser::completeKeyword(){
     std::string str_queue(this->queue.begin(), this->queue.end());
-    size_t position = STRWORDSCONCAT.find(str_queue);
+    size_t position = concatenacionPalabrasClave.find(str_queue);
     
     switch (position) {
         case 0:

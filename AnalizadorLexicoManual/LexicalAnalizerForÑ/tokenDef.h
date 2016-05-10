@@ -52,3 +52,4 @@
 #define OR  317
 #define NOT 318
 #define CADENA 319
+#define GLOBAL 320

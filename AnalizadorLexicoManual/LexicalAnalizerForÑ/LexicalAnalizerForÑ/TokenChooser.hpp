@@ -6,14 +6,11 @@
 //  Copyright © 2016 Laura del Pino Díaz. All rights reserved.
 //
 
-#ifndef TokenChooser_hpp
-#define TokenChooser_hpp
+#pragma once
 #include "Writer.hpp"
 #include "tokenDef.h"
-#include "keywords.h"
 #include <deque>
-#include <string>
-#endif /* TokenChooser_hpp */
+
 
 class TokenChooser {
     Writer * w;
