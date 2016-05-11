@@ -1,0 +1,20 @@
+global REAL externa;
+global VECTOR shushushu;
+
+func inicio{
+	REAL a;
+	REAL b = 3;
+	VECTOR c = [2,4,5,6];
+	VECTOR shushushu = espacio [5];
+	REAL z;
+	escribe z ;
+	mientras (3 == 4){
+		REAL d;
+	}
+}
+
+func REAL ajajajaCafeina(REAL a){
+	escribe  "quiero mas cafeina";
+	devuelve 0;
+}
+

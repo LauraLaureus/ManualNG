@@ -10,12 +10,16 @@
 #define Scanner_hpp
 
 #include <fstream>
+//#include <iterator>
 #include "global.h"
 
 #endif /* Scanner_hpp */
 
+using namespace std;
+
 class Scanner {
     std::ifstream file;
+    //std::istreambuf_iterator<char> buf_iter;
     char current;
     
 public:

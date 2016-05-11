@@ -34,6 +34,7 @@
 		278AF1631C99C9C200C524A9 /* TokenChooser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TokenChooser.hpp; sourceTree = "<group>"; };
 		278AF1651C99CBAE00C524A9 /* Writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Writer.cpp; sourceTree = "<group>"; };
 		278AF1661C99CBAE00C524A9 /* Writer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Writer.hpp; sourceTree = "<group>"; };
+		27BF72671CE31C2700394184 /* test.ng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ng; sourceTree = "<group>"; };
 		27DFE3B81CB0359700E1221C /* keywords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keywords.h; sourceTree = "<group>"; };
 		27FCDB1B1C96F61C00AF492E /* LexicalAnalizerForÑ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LexicalAnalizerForÑ"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FCDB1E1C96F61C00AF492E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				274608501CE2866700B3A50C /* tokenDef.h */,
 				27DFE3B81CB0359700E1221C /* keywords.h */,
 				278AF15F1C99C5BC00C524A9 /* Scanner.cpp */,
+				27BF72671CE31C2700394184 /* test.ng */,
 				278AF1601C99C5BC00C524A9 /* Scanner.hpp */,
 				27FCDB1E1C96F61C00AF492E /* main.cpp */,
 				278AF15E1C99C54000C524A9 /* global.h */,

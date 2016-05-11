@@ -13,11 +13,14 @@
 
 int main(int argc, const char * argv[]) {
     
-    Scanner s("test.ng");
+    
+    Scanner s("/Users/lala/ManualNG/AnalizadorLexicoManual/LexicalAnalizerForÑ/LexicalAnalizerForÑ/test.ng");
     TokenChooser tc = *new TokenChooser();
     char c;
     
     //TODO modificar esto con la nueva función de tookenchoser hasnext
+    
+    
     while(s.hasNext()){
         c = s.nextChar();
         tc.accept(c);

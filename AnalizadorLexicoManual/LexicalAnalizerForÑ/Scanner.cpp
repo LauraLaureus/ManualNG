@@ -15,9 +15,10 @@ Scanner::Scanner(const char* path){
 
 char Scanner::nextChar(){
     this->file.get(this->current);
+    //this->current = this->buf_iter(this)
     return this->current;
 }
 
 bool Scanner::hasNext(){
-    return this->current == EOF;
+    return this->file.good();
 }
