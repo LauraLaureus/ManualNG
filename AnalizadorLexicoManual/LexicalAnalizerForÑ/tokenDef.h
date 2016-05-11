@@ -18,7 +18,7 @@
 #define PUNTOYCOMA 274
 #define DOSPUNTOS 275
 #define MIENTRAS 276
-#define PARA 278
+#define PARAR 278
 #define FINAL 279
 #define COMIENZAFUNCION 280
 #define NULO   281

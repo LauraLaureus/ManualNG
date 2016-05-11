@@ -9,20 +9,24 @@
 #pragma once
 #include "Writer.hpp"
 #include "tokenDef.h"
+#include "RegularExpressionAutomataManager.hpp"
 #include <deque>
+#include <map>
 
+using namespace std;
 
 class TokenChooser {
     Writer * w;
     std::deque<char> queue;
-    bool regularExpressionInProcess;
+    map<std::string, int> keywords;
+    RegularExpressionAutomataManager mng;
+    //bool regularExpressionInProcess;
     
 private:
     void decide();
-    bool isCurrentWhiteSpace();
-    bool isCurrentPartOfKeyword();
-    bool checkFirstOrderKeyWords();
-    int completeKeyword();
+    bool isCurrentFromIgnoreSet();
+    void buildMap();
+    void cleanBufferFromPrefixNumericKeywords();
     
 public:
     TokenChooser();

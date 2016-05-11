@@ -15,7 +15,6 @@ Scanner::Scanner(const char* path){
 
 char Scanner::nextChar(){
     this->file.get(this->current);
-    //this->current = this->buf_iter(this)
     return this->current;
 }
 

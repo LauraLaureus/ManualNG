@@ -10,6 +10,7 @@
 		274608511CE28F7000B3A50C /* TokenChooser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF1621C99C9C200C524A9 /* TokenChooser.cpp */; };
 		278AF1611C99C5BC00C524A9 /* Scanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF15F1C99C5BC00C524A9 /* Scanner.cpp */; };
 		278AF1671C99CBAE00C524A9 /* Writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF1651C99CBAE00C524A9 /* Writer.cpp */; };
+		27BF726A1CE33C6B00394184 /* RegularExpressionAutomataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27BF72681CE33C6B00394184 /* RegularExpressionAutomataManager.cpp */; };
 		27FCDB1F1C96F61C00AF492E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27FCDB1E1C96F61C00AF492E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		278AF1651C99CBAE00C524A9 /* Writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Writer.cpp; sourceTree = "<group>"; };
 		278AF1661C99CBAE00C524A9 /* Writer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Writer.hpp; sourceTree = "<group>"; };
 		27BF72671CE31C2700394184 /* test.ng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ng; sourceTree = "<group>"; };
+		27BF72681CE33C6B00394184 /* RegularExpressionAutomataManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegularExpressionAutomataManager.cpp; sourceTree = "<group>"; };
+		27BF72691CE33C6B00394184 /* RegularExpressionAutomataManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RegularExpressionAutomataManager.hpp; sourceTree = "<group>"; };
 		27DFE3B81CB0359700E1221C /* keywords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keywords.h; sourceTree = "<group>"; };
 		27FCDB1B1C96F61C00AF492E /* LexicalAnalizerForÑ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LexicalAnalizerForÑ"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FCDB1E1C96F61C00AF492E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				278AF1631C99C9C200C524A9 /* TokenChooser.hpp */,
 				278AF1651C99CBAE00C524A9 /* Writer.cpp */,
 				278AF1661C99CBAE00C524A9 /* Writer.hpp */,
+				27BF72681CE33C6B00394184 /* RegularExpressionAutomataManager.cpp */,
+				27BF72691CE33C6B00394184 /* RegularExpressionAutomataManager.hpp */,
 			);
 			path = "LexicalAnalizerForÑ";
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				278AF1671C99CBAE00C524A9 /* Writer.cpp in Sources */,
 				278AF1611C99C5BC00C524A9 /* Scanner.cpp in Sources */,
 				27FCDB1F1C96F61C00AF492E /* main.cpp in Sources */,
+				27BF726A1CE33C6B00394184 /* RegularExpressionAutomataManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
