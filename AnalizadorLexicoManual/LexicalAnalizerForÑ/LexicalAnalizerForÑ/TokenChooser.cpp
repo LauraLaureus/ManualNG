@@ -58,6 +58,11 @@ void TokenChooser::decide(){
             this->w->writeToken(IDENTIFICADOR);
             this->queue.erase(this->queue.begin(), this->queue.begin()+index);
         }
+        else if (n == 3){
+            int index = this->mng.getLastIndexFromLastActive();
+            this->w->writeToken(CADENA);
+            this->queue.erase(this->queue.begin(), this->queue.begin()+index);
+        }
     }
 }
 

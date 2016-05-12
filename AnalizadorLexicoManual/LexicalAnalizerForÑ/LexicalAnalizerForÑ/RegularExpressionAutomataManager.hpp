@@ -35,11 +35,51 @@ public:
 
 
 
+class RegularExpressionAutomataDigit: public RegularExpressionAutomata{
+private:
+    double value;
+    int lastIndex = 0;
+    int initialState(std::string chain, bool write);
+    int State1(std::string chain,int index, bool write);
+    int State2(std::string chain,int index, bool write);
+
+public:
+    int check(std::string str, bool write){
+        return initialState(str,false);
+    };
+    double getValue();
+    int getLastIndex();
+};
+
+/* ---------------FOCUS -----------------*/
+
+
+class RegularExpressionAutomataString: public RegularExpressionAutomata{
+
+    std::string value;
+    int lastIndex = 0;
+    int initialState(std::string chain, bool write);
+    int State1(std::string chain,int index, bool write);
+    int State2(std::string chain,int index, bool write);
+
+public:
+    int check(std::string str, bool write){
+        return initialState(str,false);
+    };
+    
+    std::string getValue();
+    int getLastIndex();
+
+};
+
+
 
 class RegularExpressionAutomataManager{
 
     int lastActive;
     RegularExpressionAutomataIdentificador id;
+    RegularExpressionAutomataDigit dig;
+    RegularExpressionAutomataString str;
     /*For Automatas*/
     
 public:
@@ -47,3 +87,5 @@ public:
     int anyRegularExpresionInRightOrPartialState(std::string,bool);
     int getLastIndexFromLastActive();
 };
+
+
