@@ -8,15 +8,7 @@
 #pragma once
 #include <string>
 
-class RegularExpressionAutomataManager{
 
-    /*For Automatas*/
-    
-public:
-    
-    bool anyRegularExpresionInRightOrPartialState(std::string);
-    void write(std::string);
-};
 
 class RegularExpressionAutomata{
 public:
@@ -25,13 +17,25 @@ public:
 
 
 class RegularExpressionAutomataIdentificador : public RegularExpressionAutomata{
-
+    
 private:
     int initialState(std::string chain,bool write);
-    
+    int State1(std::string chain,int index,bool write);
     
 public:
     int check(std::string str){
         return initialState(str,false);
     };
+};
+
+class RegularExpressionAutomataManager{
+
+    
+    RegularExpressionAutomataIdentificador id;
+    /*For Automatas*/
+    
+public:
+    RegularExpressionAutomataManager();
+    bool anyRegularExpresionInRightOrPartialState(std::string);
+    void write(std::string);
 };
