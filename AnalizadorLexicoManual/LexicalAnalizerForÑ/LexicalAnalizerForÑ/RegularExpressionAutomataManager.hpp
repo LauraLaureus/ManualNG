@@ -12,7 +12,7 @@
 
 class RegularExpressionAutomata{
 public:
-    virtual int check(std::string str) = 0;
+    virtual int check(std::string str,bool write) = 0;
 };
 
 
@@ -21,21 +21,29 @@ class RegularExpressionAutomataIdentificador : public RegularExpressionAutomata{
 private:
     int initialState(std::string chain,bool write);
     int State1(std::string chain,int index,bool write);
+    std::string identifier;
+    int lastIndex = 0;
     
 public:
-    int check(std::string str){
+    int check(std::string str,bool write){
         return initialState(str,false);
     };
+    
+    std::string getIdentifier();
+    int getLastIndex();
 };
+
+
+
 
 class RegularExpressionAutomataManager{
 
-    
+    int lastActive;
     RegularExpressionAutomataIdentificador id;
     /*For Automatas*/
     
 public:
     RegularExpressionAutomataManager();
-    bool anyRegularExpresionInRightOrPartialState(std::string);
-    void write(std::string);
+    int anyRegularExpresionInRightOrPartialState(std::string,bool);
+    int getLastIndexFromLastActive();
 };

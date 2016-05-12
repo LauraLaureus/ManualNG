@@ -21,14 +21,20 @@ TokenChooser::TokenChooser(){
 
 void TokenChooser::accept(char c){
     this->queue.push_back(c);
-    if (isCurrentFromIgnoreSet()) this->queue.pop_back();
     
-    if( this->queue.size() >= 2){
+    
+    //if( this->queue.size() >= 2){
         decide();
-    }
+    //}
 }
 
 void TokenChooser::decide(){
+    
+    bool endOfToken = false;
+    if (isCurrentFromIgnoreSet()){
+        this->queue.pop_back();
+        endOfToken = true;
+    }
     
     string str_queue(this->queue.begin(),this->queue.end());
     
@@ -36,12 +42,22 @@ void TokenChooser::decide(){
     if(this->keywords.count(str_queue) != 0){
         this->w->writeToken(this->keywords[str_queue]);
         this->queue.clear();
+        return;
     }
     
     //sino
-    else{
-        if (!this->mng.anyRegularExpresionInRightOrPartialState(str_queue))
+    else if (str_queue.size() >=2){
+        int n = this->mng.anyRegularExpresionInRightOrPartialState(str_queue,endOfToken);
+        if ( n  < 0)
             cleanBufferFromPrefixNumericKeywords();
+        else if (n == 0){
+            this->queue.clear();
+        }
+        else if (n == 2){
+            int index = this->mng.getLastIndexFromLastActive();
+            this->w->writeToken(IDENTIFICADOR);
+            this->queue.erase(this->queue.begin(), this->queue.begin()+index);
+        }
     }
 }
 
@@ -52,7 +68,7 @@ void TokenChooser::cleanBufferFromPrefixNumericKeywords(){
     
     switch (c) {
         case ';':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords[";"]);
             this->queue.pop_front();
             break;
             
@@ -122,7 +138,7 @@ void TokenChooser::cleanBufferFromPrefixNumericKeywords(){
 }
 
 bool TokenChooser::isCurrentFromIgnoreSet(){
-    return queue.back() == ' ' || queue.back() == '\t' || queue.back() == '\n' ;
+    return queue.back() == ' ' || queue.back() == '\t' || queue.back() == '\n' || queue.back() == '\b' ;
 }
 
 

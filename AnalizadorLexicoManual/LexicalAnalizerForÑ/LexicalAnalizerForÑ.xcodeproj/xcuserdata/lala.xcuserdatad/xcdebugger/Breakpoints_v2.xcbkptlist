@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LexicalAnalizerForN&#x303;/TokenChooser.cpp"
-            timestampString = "484652248.343216"
+            timestampString = "484733574.638543"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "TokenChooser::decide()"
             landmarkType = "5">
          </BreakpointContent>
@@ -152,12 +152,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LexicalAnalizerForN&#x303;/TokenChooser.cpp"
-            timestampString = "484652137.769135"
+            timestampString = "484733574.638543"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "TokenChooser::accept(char c)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "TokenChooser::decide()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -167,28 +167,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LexicalAnalizerForN&#x303;/RegularExpressionAutomataManager.cpp"
-            timestampString = "484731107.276509"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "RegularExpressionAutomataManager::anyRegularExpresionInRightOrPartialState(std::string chain)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "LexicalAnalizerForN&#x303;/TokenChooser.cpp"
-            timestampString = "484731245.637349"
+            timestampString = "484733617.146724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "TokenChooser::decide()"
             landmarkType = "5">
          </BreakpointContent>
@@ -196,16 +180,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LexicalAnalizerForN&#x303;/RegularExpressionAutomataManager.cpp"
-            timestampString = "484731304.125184"
+            filePath = "LexicalAnalizerForN&#x303;/TokenChooser.cpp"
+            timestampString = "484734109.961589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "RegularExpressionAutomataIdentificador::State1(std::string chain,int index,bool write)"
+            landmarkName = "TokenChooser::decide()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LexicalAnalizerForN&#x303;/TokenChooser.cpp"
+            timestampString = "484739864.797273"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "TokenChooser::isCurrentFromIgnoreSet()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -215,13 +215,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LexicalAnalizerForN&#x303;/RegularExpressionAutomataManager.cpp"
-            timestampString = "484731440.900025"
+            filePath = "LexicalAnalizerForN&#x303;/TokenChooser.cpp"
+            timestampString = "484734775.061872"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "RegularExpressionAutomataIdentificador::initialState(std::string chain,bool write)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "TokenChooser::decide()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LexicalAnalizerForN&#x303;/TokenChooser.cpp"
+            timestampString = "484739864.797273"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "TokenChooser::decide()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
