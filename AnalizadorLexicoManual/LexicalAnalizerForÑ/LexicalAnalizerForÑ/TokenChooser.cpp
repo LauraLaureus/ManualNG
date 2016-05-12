@@ -73,63 +73,63 @@ void TokenChooser::cleanBufferFromPrefixNumericKeywords(){
             break;
             
         case '=':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["="]);
             this->queue.pop_front();
             break;
         case '[':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["["]);
             this->queue.pop_front();
             break;
         case ']':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["]"]);
             this->queue.pop_front();
             break;
         case ',':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords[","]);
             this->queue.pop_front();
             break;
         case '+':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["+"]);
             this->queue.pop_front();
             break;
         case '-':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["-"]);
             this->queue.pop_front();
             break;
         case '/':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["/"]);
             this->queue.pop_front();
             break;
         case '*':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["*"]);
             this->queue.pop_front();
             break;
         case '!':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["!"]);
             this->queue.pop_front();
             break;
         case '>':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords[">"]);
             this->queue.pop_front();
             break;
         case '<':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["<"]);
             this->queue.pop_front();
             break;
         case '{':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["{"]);
             this->queue.pop_front();
             break;
         case '}':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["}"]);
             this->queue.pop_front();
             break;
         case '(':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords["("]);
             this->queue.pop_front();
             break;
         case ')':
-            this->w->writeToken(this->keywords[""]);
+            this->w->writeToken(this->keywords[")"]);
             this->queue.pop_front();
             break;
         default:
