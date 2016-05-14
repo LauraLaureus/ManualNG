@@ -8,24 +8,15 @@
 
 #include <iostream>
 #include "global.h"
-#include "Scanner.hpp"
-#include "TokenChooser.hpp"
+#include "TopDownSintacticAnalizer.hpp"
 
 int main(int argc, const char * argv[]) {
     
     
-    Scanner s("/Users/lala/ManualNG/AnalizadorLexicoManual/LexicalAnalizerForÑ/LexicalAnalizerForÑ/test.ng");
-    TokenChooser tc = *new TokenChooser();
-    char c;
+   // Scanner s("/Users/lala/ManualNG/AnalizadorLexicoManual/LexicalAnalizerForÑ/LexicalAnalizerForÑ/test.ng");
     
-    //TODO modificar esto con la nueva función de tookenchoser hasnext
-    
-    
-    while(s.hasNext()){
-        c = s.nextChar();
-        tc.accept(c);
-    }
-    
-    
+    TopDownSintacticAnalizer sang = *new TopDownSintacticAnalizer("/Users/lala/ManualNG/AnalizadorLexicoManual/LexicalAnalizerForÑ/LexicalAnalizerForÑ/test.ng");
+    sang.analice();
+       
     return 0;
 }

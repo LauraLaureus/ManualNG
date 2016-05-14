@@ -23,5 +23,7 @@ private:
     
     void fullfillAnalysisTable();
 public:
+    
+    TopDownSintacticAnalizer(std::string path);
     void analice();
 };

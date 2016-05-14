@@ -8,26 +8,29 @@
 
 #include "TokenChooser.hpp"
 
-std::string concatenacionPalabrasClave = "sifincasofuncnuloparasinofinaliniciosalidaespaciodevuelvemientrasREALVECTORLETRAleeescribeglobal";
+/*
+std::string concatenacionPalabrasClave = "sifincasofuncnuloparasinofinaliniciosalidaespaciodevuelvemientrasREALVECTORLETRAleeescribeglobal"; //candidato a ser borrado.
 
+Symbol<int> CONTINUE = *new Symbol<int>(-1,-1);*/
 
-TokenChooser::TokenChooser(){
-    this->w = new Writer();
+/*
+TokenChooser::TokenChooser(std::string path){
     this->keywords = *new map<std::string, int>();
     buildMap();
     this->mng = *new RegularExpressionAutomataManager();
-    //this->regularExpressionInProcess = false;
+    this->regularExpressionInProcess = false;
+    this->s = new Scanner(path.c_str());
+}*/
+
+/*void TokenChooser::accept(char c){
+    
 }
 
-void TokenChooser::accept(char c){
-    this->queue.push_back(c);
+template <class D> Symbol<D> TokenChooser::nextToken(){
     
-    
-    //if( this->queue.size() >= 2){
-        decide();
-    //}
-}
+}*/
 
+/*
 void TokenChooser::decide(){
     
     bool endOfToken = false;
@@ -40,7 +43,7 @@ void TokenChooser::decide(){
     
     //si el contenido coincide, completamente con una palabra clave escribela.
     if(this->keywords.count(str_queue) != 0){
-        this->w->writeToken(this->keywords[str_queue]);
+        //Escribe palabraClave
         this->queue.clear();
         return;
     }
@@ -55,17 +58,18 @@ void TokenChooser::decide(){
         }
         else if (n == 2){
             int index = this->mng.getLastIndexFromLastActive();
-            this->w->writeToken(IDENTIFICADOR);
+            //Escribe identificador
             this->queue.erase(this->queue.begin(), this->queue.begin()+index);
         }
         else if (n == 3){
             int index = this->mng.getLastIndexFromLastActive();
-            this->w->writeToken(CADENA);
+            //Escribe cadena
             this->queue.erase(this->queue.begin(), this->queue.begin()+index);
         }
     }
-}
+}*/
 
+/*
 void TokenChooser::cleanBufferFromPrefixNumericKeywords(){
     
     string str_queue(this->queue.begin(),this->queue.end());
@@ -140,13 +144,14 @@ void TokenChooser::cleanBufferFromPrefixNumericKeywords(){
         default:
             break;
     }
-}
+}*/
 
+/*
 bool TokenChooser::isCurrentFromIgnoreSet(){
     return queue.back() == ' ' || queue.back() == '\t' || queue.back() == '\n' || queue.back() == '\b' ;
-}
+}*/
 
-
+/*
 void TokenChooser::buildMap(){
 
     this->keywords["REAL"] = TIPOREAL;
@@ -183,4 +188,4 @@ void TokenChooser::buildMap(){
     this->keywords["si"] = SI;
     this->keywords["mientras"] = MIENTRAS;
     this->keywords["parar"] = PARAR;
-}
+}*/
