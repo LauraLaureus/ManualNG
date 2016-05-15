@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		274608511CE28F7000B3A50C /* TokenChooser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF1621C99C9C200C524A9 /* TokenChooser.cpp */; };
-		274BD8791CE76D71005FD033 /* TopDownSintacticAnalizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274BD8771CE76D71005FD033 /* TopDownSintacticAnalizer.cpp */; };
 		278AF1611C99C5BC00C524A9 /* Scanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF15F1C99C5BC00C524A9 /* Scanner.cpp */; };
 		278AF1671C99CBAE00C524A9 /* Writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 278AF1651C99CBAE00C524A9 /* Writer.cpp */; };
 		27BF726A1CE33C6B00394184 /* RegularExpressionAutomataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27BF72681CE33C6B00394184 /* RegularExpressionAutomataManager.cpp */; };
@@ -29,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		274608501CE2866700B3A50C /* tokenDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenDef.h; sourceTree = SOURCE_ROOT; };
-		274BD8771CE76D71005FD033 /* TopDownSintacticAnalizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TopDownSintacticAnalizer.cpp; sourceTree = "<group>"; };
 		274BD8781CE76D71005FD033 /* TopDownSintacticAnalizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TopDownSintacticAnalizer.hpp; sourceTree = "<group>"; };
 		278AF15E1C99C54000C524A9 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
 		278AF15F1C99C5BC00C524A9 /* Scanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scanner.cpp; path = ../Scanner.cpp; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				278AF1661C99CBAE00C524A9 /* Writer.hpp */,
 				27BF72681CE33C6B00394184 /* RegularExpressionAutomataManager.cpp */,
 				27BF72691CE33C6B00394184 /* RegularExpressionAutomataManager.hpp */,
-				274BD8771CE76D71005FD033 /* TopDownSintacticAnalizer.cpp */,
 				274BD8781CE76D71005FD033 /* TopDownSintacticAnalizer.hpp */,
 			);
 			path = "LexicalAnalizerForÑ";
@@ -155,7 +152,6 @@
 				278AF1671C99CBAE00C524A9 /* Writer.cpp in Sources */,
 				278AF1611C99C5BC00C524A9 /* Scanner.cpp in Sources */,
 				27FCDB1F1C96F61C00AF492E /* main.cpp in Sources */,
-				274BD8791CE76D71005FD033 /* TopDownSintacticAnalizer.cpp in Sources */,
 				27BF726A1CE33C6B00394184 /* RegularExpressionAutomataManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

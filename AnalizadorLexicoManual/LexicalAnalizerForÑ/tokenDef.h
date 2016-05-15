@@ -4,8 +4,8 @@
 #define CIERRACORCHETES 260
 #define ABRELLAVES 261
 #define CIERRALLAVES 262
-#define TIPOREAL 263
-#define TIPOVECTOR 264
+#define REAL 263
+#define VECTOR 264
 #define TIPOLETRA 265
 #define RESERVAESPACIOVECTOR 266
 #define SI 267
@@ -20,14 +20,14 @@
 #define MIENTRAS 276
 #define PARAR 278
 #define FINAL 279
-#define COMIENZAFUNCION 280
+#define FUNC 280
 #define NULO   281
 #define DEVUELVE 282
 #define SALIDA 283
 #define COMA 284
 #define INICIO 285
 #define NUMERO 286
-#define IDENTIFICADOR 287
+#define VARIABLE 287
 #define LEER 288
 #define ESCRIBIR 289
 #define ASIGNACION 290
@@ -54,3 +54,9 @@
 #define CADENA 319
 #define GLOBAL 320
 #define CALL 321
+#define BREAK 322
+#define VALORREAL 323
+
+
+////////////////////////////NON TERMINAL
+
