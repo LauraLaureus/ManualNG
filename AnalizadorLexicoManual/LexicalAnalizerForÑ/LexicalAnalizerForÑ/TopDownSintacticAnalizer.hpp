@@ -329,149 +329,118 @@ private:
         this->table.insertARelation(declara_real);
         
         
-        Relation creacion_real = *new Relation(asignaReal.token,VALORREAL);
+        Relation creacion_real = *new Relation(creacionReal.token,VALORREAL);
         creacion_real.addToNoTerminal(*new Symbol(VALORREAL));
         creacion_real.addToNoTerminal(auxExpresion);
         this->table.insertARelation(creacion_real);
         
-        Relation creacion_real2 = *new Relation(asignaReal.token,VARIABLE);
+        Relation creacion_real2 = *new Relation(creacionReal.token,VARIABLE);
         creacion_real2.addToNoTerminal(expresion);
         this->table.insertARelation(creacion_real2);
         
         
-        Relation asigna_vector = *new Relation(content.token,ASIGNACION);
+        Relation asigna_vector = *new Relation(asignaVector.token,ASIGNACION);
         asigna_vector.addToNoTerminal(*new Symbol(ASIGNACION));
         asigna_vector.addToNoTerminal(creacionVector);
         this->table.insertARelation(asigna_vector);
         
         
-        Relation declara_vector = *new Relation(content.token,PUNTOYCOMA);
+        Relation declara_vector = *new Relation(asignaVector.token,PUNTOYCOMA);
         this->table.insertARelation(declara_vector);
         
-        Relation creacion_vector = *new Relation(asignaVector.token,ABRECORCHETES);
+        Relation creacion_vector = *new Relation(creacionVector.token,ABRECORCHETES);
         creacion_vector.addToNoTerminal(*new Symbol(VALORREAL));
         creacion_vector.addToNoTerminal(vectorNT);
         this->table.insertARelation(creacion_vector);
         
-        Relation creacion_vector2 = *new Relation(asignaVector.token,RESERVAESPACIOVECTOR);
+        Relation creacion_vector2 = *new Relation(creacionVector.token,RESERVAESPACIOVECTOR);
         creacion_vector2.addToNoTerminal(*new Symbol(RESERVAESPACIOVECTOR));
         creacion_vector2.addToNoTerminal(*new Symbol(ABRECORCHETES));
         creacion_vector2.addToNoTerminal(*new Symbol(VALORREAL));
         creacion_vector2.addToNoTerminal(*new Symbol(CIERRACORCHETES));
         this->table.insertARelation(creacion_vector);
         
-        Relation vectorNt = *new Relation(creacionVector.token,ABRECORCHETES);
+        Relation vectorNt = *new Relation(vectorNt.token,ABRECORCHETES);
         vectorNt.addToNoTerminal(*new Symbol(ABRECORCHETES));
         vectorNt.addToNoTerminal(elementos);
         vectorNt.addToNoTerminal(*new Symbol(CIERRACORCHETES));
         this->table.insertARelation(vectorNt);
         
-        Relation elementos_r = *new Relation(vectorNT.token,VALORREAL);
+        Relation elementos_r = *new Relation(elementos.token,VALORREAL);
         elementos_r.addToNoTerminal(*new Symbol(VALORREAL));
         elementos_r.addToNoTerminal(completion);
         this->table.insertARelation(elementos_r);
         
-        Relation completion_full = *new Relation(elementos.token,COMA);
+        Relation completion_full = *new Relation(completion.token,COMA);
         completion_full.addToNoTerminal(*new Symbol(COMA));
         completion_full.addToNoTerminal(elementos);
         this->table.insertARelation(completion_full);
         
-        Relation completion_lambda = *new Relation(elementos.token,PUNTOYCOMA);
+        Relation completion_lambda = *new Relation(completion.token,PUNTOYCOMA);
         this->table.insertARelation(completion_lambda);
         
         
-        Relation modificaVariable_r = *new Relation(content.token,VARIABLE);
+        Relation modificaVariable_r = *new Relation(modificaVariable.token,VARIABLE);
         modificaVariable_r.addToNoTerminal(asignacion);
         modificaVariable_r.addToNoTerminal(modificacion);
         this->table.insertARelation(modificaVariable_r);
         
-        Relation asignacion_rel = *new Relation(modificaVariable.token,VARIABLE);
+        Relation asignacion_rel = *new Relation(modificacion.token,VARIABLE);
         asignacion_rel.addToNoTerminal(*new Symbol(VARIABLE));
         asignacion_rel.addToNoTerminal(desplazamiento);
         asignacion_rel.addToNoTerminal(*new Symbol(ASIGNACION));
         this->table.insertARelation(asignacion_rel);
         
-        Relation modificacion_r = *new Relation(modificaVariable.token,VALORREAL);
+        Relation modificacion_r = *new Relation(modificacion.token,VALORREAL);
         modificacion_r.addToNoTerminal(*new Symbol(VALORREAL));
         modificacion_r.addToNoTerminal(auxExpresion);
         this->table.insertARelation(modificacion_r);
         
-        Relation modificacion_r2 = *new Relation(modificaVariable.token,VARIABLE);
+        Relation modificacion_r2 = *new Relation(modificacion.token,VARIABLE);
         modificacion_r2.addToNoTerminal(variable);
         modificacion_r2.addToNoTerminal(auxExpresion);
         this->table.insertARelation(modificacion_r2);
         
-        Relation modificacion_r3 = *new Relation(modificaVariable.token,LEER);
+        Relation modificacion_r3 = *new Relation(modificacion.token,LEER);
         modificacion_r.addToNoTerminal(*new Symbol(LEER));
         this->table.insertARelation(modificacion_r3);
         
-        Relation modificacion_r4 = *new Relation(modificaVariable.token,CALL);
+        Relation modificacion_r4 = *new Relation(modificacion.token,CALL);
         modificacion_r.addToNoTerminal(llamadaFuncion);
         this->table.insertARelation(modificacion_r4);
         
-        Relation variable_r = *new Relation(modificacion.token,VARIABLE);
+        Relation variable_r = *new Relation(variable.token,VARIABLE);
         variable_r.addToNoTerminal(*new Symbol(VARIABLE));
         variable_r.addToNoTerminal(desplazamiento);
         this->table.insertARelation(variable_r);
         
-        //TODO viene de dos sitios con el mismo caracter
-        Relation desplazamiento_r = *new Relation(variable.token,ABRECORCHETES);
+        Relation desplazamiento_r = *new Relation(desplazamiento.token,ABRECORCHETES);
         desplazamiento_r.addToNoTerminal(posicionVector);
         this->table.insertARelation(desplazamiento_r);
         
-        Relation desplazamiento_2r = *new Relation(asignacion.token,ABRECORCHETES);
-        desplazamiento_2r.addToNoTerminal(posicionVector);
-        this->table.insertARelation(desplazamiento_2r);
-        
-        Relation desplazamiento_r2 = *new Relation(variable.token,PUNTOYCOMA);
+        Relation desplazamiento_r2 = *new Relation(desplazamiento.token,PUNTOYCOMA);
         
         this->table.insertARelation(desplazamiento_r2);
         
-        Relation desplazamiento_2r2 = *new Relation(asignacion.token,ASIGNACION);
-        this->table.insertARelation(desplazamiento_2r2);
         
-        Relation posicion_vector = *new Relation(desplazamiento.token,ABRECORCHETES);
+        Relation posicion_vector = *new Relation(posicionVector.token,ABRECORCHETES);
         posicion_vector.addToNoTerminal(*new Symbol(ABRECORCHETES));
         posicion_vector.addToNoTerminal(termino);
         posicion_vector.addToNoTerminal(*new Symbol(CIERRACORCHETES));
         this->table.insertARelation(posicion_vector);
         
-        Relation expresion_r = *new Relation(creacionReal.token,VALORREAL);
+        Relation expresion_r = *new Relation(expresion.token,VALORREAL);
         expresion_r.addToNoTerminal(termino);
         expresion_r.addToNoTerminal(operacion);
         expresion_r.addToNoTerminal(termino);
         this->table.insertARelation(expresion_r);
         
-        Relation expresion_r2 = *new Relation(creacionReal.token,VARIABLE);
+        Relation expresion_r2 = *new Relation(expresion.token,VARIABLE);
         expresion_r2.addToNoTerminal(termino);
         expresion_r2.addToNoTerminal(operacion);
         expresion_r2.addToNoTerminal(termino);
         this->table.insertARelation(expresion_r2);
         
-        Relation expresion_2r = *new Relation(bloqueSi.token,VALORREAL);
-        expresion_2r.addToNoTerminal(termino);
-        expresion_2r.addToNoTerminal(operacion);
-        expresion_2r.addToNoTerminal(termino);
-        this->table.insertARelation(expresion_2r);
-        
-        Relation expresion_2r2 = *new Relation(bloqueSi.token,VARIABLE);
-        expresion_2r2.addToNoTerminal(termino);
-        expresion_2r2.addToNoTerminal(operacion);
-        expresion_2r2.addToNoTerminal(termino);
-        this->table.insertARelation(expresion_2r2);
-        
-        Relation expresion_3r = *new Relation(bloqueMientras.token,VARIABLE);
-        expresion_3r.addToNoTerminal(termino);
-        expresion_3r.addToNoTerminal(operacion);
-        expresion_3r.addToNoTerminal(termino);
-        this->table.insertARelation(expresion_3r);
-        
-        
-        Relation expresion_3r2 = *new Relation(bloqueMientras.token,VALORREAL);
-        expresion_3r2.addToNoTerminal(termino);
-        expresion_3r2.addToNoTerminal(operacion);
-        expresion_3r2.addToNoTerminal(termino);
-        this->table.insertARelation(expresion_3r2);
         
         Relation termino_r = *new Relation(termino.token,VALORREAL);
         termino_r.addToNoTerminal(*new Symbol(VALORREAL));
