@@ -360,7 +360,7 @@ private:
         creacion_vector2.addToNoTerminal(*new Symbol(CIERRACORCHETES));
         this->table.insertARelation(creacion_vector);
         
-        Relation vectorNt = *new Relation(vectorNt.token,ABRECORCHETES);
+        Relation vectorNt = *new Relation(vectorNT.token,ABRECORCHETES);
         vectorNt.addToNoTerminal(*new Symbol(ABRECORCHETES));
         vectorNt.addToNoTerminal(elementos);
         vectorNt.addToNoTerminal(*new Symbol(CIERRACORCHETES));
